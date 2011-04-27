@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Use HTML5 Now, Dammit!</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" media="all" href="html5dammit.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+  </head>
+
+  <body>
+    <article id="useHTML5dammit">
+      <header id="intro">
+        <h1>Use HTML5 Now, Dammit!</h1>
+        <h2>or, at the very least use &lt;!doctype html&gt;</h2>
+        <ul class="slide_nav">
+          <li><a href="#doctype" class="next">Next</a></li>
+        </ul>
+      </header>
+
+      <section id="doctype">
+        <header>
+          <h1>If you remember nothing else, remember this: &lt;!doctype html&gt;</h1>
+        </header>
+        <p>Simplest DOCTYPE that will keep browsers out of dreaded <a href="http://quirksmode.org/">quirks mode</a></p>
+        <p>For a great overview of three strategies for picking a doctype, read <a href="http://cognition.happycog.com/article/are-doctypes-the-new-lunch-tables">Jenn Lukas' article in Cognition</a>
+          <ul class="slide_nav">
+            <li><a href="#intro" class="reset">Previous</a></li>
+            <li><a href="#whatisit" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="whatisit">
+          <header>
+            <h1>What is HTML5?</h1>
+          </header>
+          <p>Simply put, it's &ldquo;the latest iteration of the web&rsquo;s lingua franca&rdquo; &mdash; <a href="http://adactio.com">Jeremy Keith</a></p>
+          <p>There are many technologies which often get lumped under the banner of HTML5. Some make less sense than others (SVG, CSS3)</p>
+          <p>Just remember, HTML is markup</p>
+          <ul class="slide_nav">
+            <li><a href="#doctype" class="prev">Previous</a></li>
+            <li><a href="#whatisntit" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="whatisntit">
+          <header>
+            <h1>What isn't HTML5?</h1>
+          </header>
+          <h2>HTML5 may or may not be:</h2>
+          <ul>
+            <li>The silver bullet for all the web&#x27;s problems</li>
+            <li><a href="http://areunicorns.partofhtml5.com/?" title="yEs!">Unicorns</a></li>
+            <li><a href="http://media.chikuyonok.ru/ambilight" title="OMG! Double rainbow all the way across the sky!">Rainbows</a></li>
+          </ul>
+          <ul class="slide_nav">
+            <li><a href="#whatisit" class="prev">Previous</a></li>
+            <li><a href="#why" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="why">
+          <header>
+            <h1>Why?</h1>
+          </header>
+          <p>More semantic elements to choose from mean less cruft, more efficient markup</p>
+          <ul class="inline">
+            <li><code>header</code></li>
+            <li><code>footer</code></li>
+            <li><code>article</code></li>
+            <li><code>section</code></li>
+            <li><code>nav</code></li>
+          </ul>
+          <p>No more plug-ins, audio and video may now be displayed directly by the browser</p>
+          <p>App-like features: off-line storage, drag-and-drop, multithreading (via Web Workers)</p>
+          <ul class="slide_nav">
+            <li><a href="#whatisntit" class="prev">Previous</a></li>
+            <li><a href="#inputtypes" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="inputtypes">
+          <header>
+            <h1>New &lt;input&gt; types</h1>
+          </header>
+          <ul>
+            <li><code>email</code></li>
+            <li><code>tel</code></li>
+            <li><code>date</code></li>
+            <li><code>datetime</code></li>
+          </ul>
+          <ul class="slide_nav">
+            <li><a href="#why" class="prev">Previous</a></li>
+            <li><a href="#av" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="av">
+          <header>
+            <h1>&lt;audio/&gt; &amp;amp; &lt;video/&gt;</h1>
+          </header>
+          <p>Browser-native media, no plug-ins necessary</p>
+          <p>Codecs are a pain</p>
+          <p>IE is a pain, but no more than usual</p>
+          <p>Keep your eyes peeled for a detailed presentation on &lt;video/&gt; from Tim Badaczewski!</p>
+          <ul class="slide_nav">
+            <li><a href="#inputtypes" class="prev">Previous</a></li>
+            <li><a href="#progenhance" class="next">Next</a></li>
+          </ul>
+        </section>
+
+        <section id="progenhance">
+          <header>
+            <h1>A Note on Progressive Enhancement</h1>
+          </header>
+          <p>You can use nearly all features of HTML5, CSS3, and the latest JavaScript, but treat all of the above as bonuses for those fortunate enough to use modern browsers. Don&#x27;t forget the poor folks shackled with Internet Explorer 6 (or 7, or 8...)</p>
+            <ul>
+              <li><a href="http://modernizr.com">modernizr</a></li>
+              <li><a href="http://code.google.com/p/html5shim/">html5 shim</a></li>
+              <li><a href="http://remysharp.com/2010/10/08/what-is-a-polyfill/">polyfills</a> &ndash; &ldquo;A shim that mimics a future API providing fallback functionality to older browsers&rdquo; &mdash; <a href="http://paulirish.com/">Paul Irish</a></li>
+            </ul>
+            <ul class="slide_nav">
+              <li><a href="#av" class="prev">Previous</a></li>
+              <li><a href="#mobile" class="next">Next</a></li>
+            </ul>
+          </section>
+
+          <section id="mobile">
+            <header>
+              <h1>Mobile</h1>
+            </header>
+            <p>WebKit dominates in some form or another</p>
+            <p>HTML5 is good for mobile</p>
+            <ul>
+              <li>More semantic elements means less classitis, fewer bytes</li>
+              <li>Offline storage</li>
+              <li>Web workers</li>
+              <li>Geolocation</li>
+            </ul>
+            <ul class="slide_nav">
+              <li><a href="#progenhance" class="prev">Previous</a></li>
+              <li><a href="#resources" class="next">Next</a></li>
+            </ul>
+          </section>
+
+          <section id="resources">
+            <header>
+              <h1>Further Reading</h1>
+            </header>
+            <h2>Webbish</h2>
+            <ul class="inline">
+              <li><a href="http://diveintohtml5.org">diveintohtml5.org</a></li>
+              <li><a href="http://html5doctor.com">html5doctor.com</a></li>
+              <li><a href="http://html5rocks.com">html5rocks.com</a></li>
+              <li><a href="http://slides.html5rocks.com">slides.html5rocks.com</a></li>
+              <li><a href="http://html5demos.com">html5demos.com</a></li>
+            </ul>
+            <h2>Dead Treeish</h2>
+            <ul class="inline">
+              <li><a href="http://www.abookapart.com/products/html5-for-web-designers">HTML5 for Web Designers</a></li>
+              <li><a href="http://introducinghtml5.com/">Introducing HTML5</a></li>
+            </ul>
+            <ul class="slide_nav">
+              <li><a href="#mobile" class="prev">Previous</a></li>
+              <li><a href="#intro" class="reset">Reset</a></li>
+            </ul>
+          </section>
+          <footer>
+            <small>as presented to the Interactive Media Technology Center, <time datetime="2011-04-27">April 27, 2011</time></small>
+          </footer>
+        </article>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script>
+        jQuery(function($) {
+          var slides = $('article > header, section');
+          function reset() {
+            slides
+            .removeClass('current')
+            .hide()
+            .css('float', 'left');
+            slides
+            .first()
+            .addClass('current')
+            .show();
+            $('footer').show();
+          }
+          reset();
+
+          function next() {
+            if ($('#resources').hasClass('current')) {
+              return;
+            }
+            $('.current')
+            .hide()
+            .removeClass('current')
+            .next('section')
+            .addClass('current')
+            .show();
+            $('footer').hide();
+          }
+
+          function prev() {
+            if ($('#intro').hasClass('current')) {
+              return;
+            }
+            $('.current')
+            .hide()
+            .removeClass('current')
+            .prev()
+            .addClass('current')
+            .show();
+          }
+
+          $('.reset').click(function(e) {
+            e.preventDefault();
+            reset();
+          });
+
+          $('.next').click(function(e) {
+            e.preventDefault();
+            next();
+          });
+
+          $('.prev').click(function(e) {
+            e.preventDefault();
+            prev();
+          });
+
+          $(window).keyup(function(e) {
+            switch(e.which) {
+              case 37:
+              prev();
+              break;
+              case 39:
+              next();
+              break;
+              case 38:
+              reset();
+              break;
+              default:
+              return;
+            }
+          });
+        });
+        </script>
+      </body>
+      </html>
+

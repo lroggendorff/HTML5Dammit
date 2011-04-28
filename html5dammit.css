@@ -1,0 +1,189 @@
+/*  Less Framework 4
+    http://lessframework.com
+    by Joni Korpi
+    License: http://creativecommons.org/licenses/MIT/   */
+
+
+/*  Resets
+    ------  */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*  Typography presets
+    ------------------  */
+
+.gigantic {
+    font-size: 110px;
+    line-height: 120px;
+    letter-spacing: -2px;
+}
+
+.huge, h1 {
+    font-size: 68px;
+    line-height: 72px;
+    letter-spacing: -1px;
+}
+
+.large, h2 {
+    font-size: 42px;
+    line-height: 48px;
+}
+
+.bigger, h3 {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.big, h4 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0 0 .5em;
+}
+
+body {
+    font: 24px/32px Georgia, serif;
+}
+
+.small, small {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection         {background: rgb(255,255,158);}
+::-moz-selection    {background: rgb(255,255,158);}
+img::selection      {background: transparent;}
+img::-moz-selection {background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #efefef;
+    background-image: -moz-linear-gradient(top, #efefef, #aaaacc); 
+    background-image: -ms-linear-gradient(top, #efefef, #aaaacc); 
+    background-image: -o-linear-gradient(top, #efefef, #aaaacc); 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#aaaacc)); 
+    background-image: -webkit-linear-gradient(top, #efefef, #aaaacc); 
+    background-image: linear-gradient(top, #efefef, #aaaacc);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#efefef', EndColorStr='#aaaacc'); 
+    color: #333;
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+article {
+    height: 100%;
+}
+
+article > header, section {
+    background-color: #efefef;
+    background-image: -moz-linear-gradient(top, #efefef, #aaaaaa); 
+    background-image: -ms-linear-gradient(top, #efefef, #aaaaaa); 
+    background-image: -o-linear-gradient(top, #efefef, #aaaaaa); 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#aaaaaa)); 
+    background-image: -webkit-linear-gradient(top, #efefef, #aaaaaa); 
+    background-image: linear-gradient(top, #efefef, #aaaaaa);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#efefef', EndColorStr='#aaaaaa'); 
+    position: relative;
+    margin: 3.5%;
+    padding: 3.5%;
+    width: 86%;
+    height: 62%;
+    border: 5px solid #ccc;
+    -moz-box-shadow: 0px 6px 10px #000; 
+    -webkit-box-shadow: 0px 6px 10px #000; 
+    box-shadow: 0px 6px 10px #000;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+article > footer {
+    clear: both;
+    text-align: center;
+}
+
+p, ul {
+    margin: 0 0 .5em;    
+}
+
+.slide_nav {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.slide_nav li {
+    display: inline;
+}
+
+.slide_nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.2;
+    float: left;
+    display: block;
+    width: 100px;
+    margin-right: 10px;
+    padding: 5px;
+    background: #ccc;
+    -moz-box-shadow: 0px 0px 3px #000; 
+    -webkit-box-shadow: 0px 0px 3px #000; 
+    box-shadow: 0px 0px 3px #000;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+ul.inline {
+    list-style: none;
+    margin-left: 2em;
+}
+
+ul.inline li {
+    display: inline;
+}
+
+ul.inline li::after {
+    content: ', ';
+}
+
+ul.inline li:last-child::after {
+    content: '';
+}
